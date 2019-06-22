@@ -23,6 +23,7 @@ Authorization: Bearer <your access token>
 IdentityProvider: <identity provider code>
 ````
 Valid Identity Providers are:
+
 | Provider | Code |
 |--------|:--------|
 | Google | `google` |
