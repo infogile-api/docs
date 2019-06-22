@@ -24,7 +24,7 @@ IdentityProvider: <identity provider code>
 ````
 Valid Identity Providers are:
 | Provider | Code |
-|--------|--------|
+|--------|:--------|
 | Google | `google` |
 
 asd
