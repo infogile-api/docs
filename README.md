@@ -10,5 +10,5 @@ However, it's not for everyone, if you intend to collect data from IoT devices a
 3. Secure
 
 # How to use the API
-
-[Authorization](authorization.md "Authorization")
+- [Objects](concepts/objects.md "Objects")
+- [Authorization](authorization.md "Authorization")
