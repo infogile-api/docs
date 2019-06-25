@@ -51,7 +51,8 @@ Returns
   "enabled": <true|false>, // If the user is enabled or not,
   "status": null,
   "accessToken": "ya29.GmMxB8AEzh8NiuMopEBYmUXUqGfdJCiOnb_ZLRHNUwIulRtATg_9hQLXvZfuyzchaAierJstRp7upTHZPxrtVyw8_endkWzMeNL8QL1LnDDALTqDTt9lef_3Ct247Vt76LLxRY4",
-  "identityProvider": "google"}
+  "identityProvider": "google",
+}
 ````
 
 Example
@@ -62,7 +63,8 @@ curl -X GET http://infogile.io/auth/validlogin \
 ````
 
 ## List AppSpaces
-To list all AppSpaces a user have access to (a user identified by their email)
+To list all AppSpaces a user have *EDIT* or *ADMIN* access to (a user identified by their email).
+If a user only have *USE* access, it will not show here.  
 
 ````
 Endpoint: /auth/appspaces
@@ -74,10 +76,9 @@ Returns
 [
   {
     "appSpace": {
-      "identity": "c0be0e4d746484b97a13bbc6d2872e9c8",
-      "name": "Work order management",
-      "description": "AppSpace for the Work Order Management System",
-      "public": false,
+      "identity": "<identity of appspace>",
+      "name": "<name of appspace>",
+      "description": "<appspace description or null> "
     },
     "access": [ "EDIT", "USE", "ADMIN"],
   },
@@ -85,8 +86,7 @@ Returns
     "appSpace": {
       "identity": "kdf78dkfjaiodfl9f09sdjd9fe2wrdbsy",
       "name": "Challenge App", 
-      "description": "AppSpace for the Challenge App",
-      "public": false,
+      "description": "AppSpace for the Challenge App"
     },
     "access":[ "EDIT" , "USE" , "ADMIN" ],
   }
@@ -157,3 +157,8 @@ Returns:
   }
 ]
 ````
+
+# Notifications
+To improve responsiveness of consuming apps, we equipped Infogile with websocket-based notifications.
+
+ 
