@@ -1,5 +1,8 @@
 # Infogile Model
 
+Infogile's model is in its basic setting quite simple, you have a definition of how
+data is structured and you have data matching that structure. 
+
 ## ObjectDefinintion
 As with anywhere you keep structured data you need to have a definition of that structure. In Infogile, the type
 definition is called an *ObjectDefintion*. An *ObjectDefinition* is in it's simplest form just defining the fields an
